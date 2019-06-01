@@ -1,0 +1,70 @@
+@import '../config.scss';
+@import '../utilities.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index:300;
+    background-color: $background-color;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0.8;
+
+
+    a{
+        text-decoration: none;
+        color: $font-color;
+
+        &:hover{
+            color:$hover-color;
+        }
+    }
+    ul{
+        display: flex;
+    }
+
+    li{
+        list-style-type: none;
+        a{
+            padding: 0.45rem;
+            margin: 0 0.25rem;
+            text-decoration: none;
+            font-size:20px;
+            color: $font-color;
+
+            &:hover{
+                color:$hover-color;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 760px){
+    .nav-items {
+        display: none;
+    }
+}
+
+
+@media (min-width: 769px){
+    .navbar{
+        .toggle-button{
+            display: none;
+        }        
+    }
+}
+
+@media screen and (max-width:380px){
+    .navbar{
+        a{
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+
+
+.music-container{
+    display: flex;
+    align-items: center; 
+    .music {
+        .space{
+            display: flex;
+            margin: 20px 0;
+        }
+     }
+
+     .right{
+         margin-top: -60px;
+        font-size: 40px;
+        padding: 20px;
+     }
+}
+
+.section{
+
+    .left{
+        display:flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        color:#333;
+        margin-top: 3rem;
+        font-size: 20px;
+        text-align: end;
+        margin-bottom: 100px;
+        &:hover{
+            cursor: pointer;
+            color: red;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .music-container{
+        display: grid;
+        grid-template-columns: repeat(1fr, 1);
+        grid-template-areas: 'right' 'music';
+
+        .right{
+            font-size: 30px;
+        }
+    }
+    .music{
+        grid-area: music
+    }
+    .right{
+        grid-area: right;
+        text-align: justify;
+        font-size: 30px;
+    }
+}

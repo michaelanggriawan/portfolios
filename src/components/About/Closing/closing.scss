@@ -1,0 +1,138 @@
+.closing{
+
+    .field-text{
+        font-size: 30px;
+        text-align: justify;
+        p{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .form{
+        border: 19px solid #424242;
+        height:300px;
+        width: 100%;
+        padding: 50px;
+
+        .input-one{
+            display: flex;
+            align-items: center;
+                .form-input1{
+                    margin-right: 100px;
+                    width:100%;
+                    input{
+                        border:none;
+                        font-size: 20px;
+                        text-decoration: none;
+                        height:40px;
+                        width:100%;
+                        border-bottom: 2px solid #F25F5C;
+                        padding: 1px 0 1px 0;
+                        display: inline-block;
+                        outline: none;
+                    }
+            }
+
+            .form-input2{
+                margin-right: 20px;
+                width: 100%;
+                input{
+                    border:none;
+                    font-size: 20px;
+                    text-decoration: none;
+                    height:40px;
+                    width:100%;
+                    border-bottom: 2px solid #F25F5C;
+                    padding: 1px 0 1px 0;
+                    display: inline-block;
+                    outline: none;
+                }
+        }
+        }
+
+        .input-two{
+            margin-top: 20px;
+            input{
+                border:none;
+                font-size: 20px;
+                text-decoration: none;
+                height:40px;
+                width:100%;
+                border-bottom: 2px solid #F25F5C;
+                padding: 1px 0 1px 0;
+                display: inline-block;
+                outline: none;
+            }
+        }
+    }
+
+    .send{
+        margin-top: 20px;
+        width: 8rem;
+        margin: auto;
+        font-size: 48px;
+        p{
+            border-bottom: 5px solid black;
+        }
+
+        &:hover{
+            cursor: pointer;
+            color: #F25F5C;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .closing{
+
+        img{
+            width: 300px;
+            height: 250px;
+        }
+
+        .form{
+            .input-one{
+                display: grid;
+                grid-template-areas: repeat(1fr 2);
+                grid-gap: 20px;
+            }
+        }
+
+        .send{
+            font-size:30px;
+            text-align: center;
+            p{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .closing{
+
+
+        .form{
+                .input-one{
+                    .form-input1{
+                        input{
+                            font-size: 15px;
+                        }
+                    }
+
+                    .form-input2{
+                        input{
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .input-two{
+                    input{
+                        font-size: 15px;
+                    }
+                }
+            }   
+        }
+    }

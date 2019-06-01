@@ -1,0 +1,12 @@
+$background-color: #FFFFFF;
+$font-color: #000000;
+$hover-color: #333;
+$max-width: 1100px;
+
+@function set-text-color($color){
+    @return $color;
+}
+
+@mixin set-background($color) {
+    color: set-text-color($color);
+}

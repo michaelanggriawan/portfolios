@@ -1,0 +1,44 @@
+
+.quot {
+    margin-top: 30px;
+    display: flex;
+    
+    .card {
+        width: 35ch;
+        height: 35ch;
+        margin: auto;
+        background: grey;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.5s;
+        will-change: transform;
+        border: 15px solid white;
+        img{
+            width:30.5ch;
+            height:30.5ch;
+        }
+    
+        &:hover{
+            box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+        }
+      }
+}
+
+@media screen and(max-width:800px){
+    .quot{
+        display: grid;
+        grid-template-areas: repeat(1fr, 1);
+        grid-gap: 30px;
+
+        .card{
+            width: 30ch;
+            height: 30ch;
+            img {
+                width:26ch;
+                height:26ch;
+            }
+        }
+    }
+}

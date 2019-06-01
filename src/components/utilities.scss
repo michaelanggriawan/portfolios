@@ -1,0 +1,18 @@
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.button{
+    display: inline-block;
+    border: 2px solid #333;
+    width: 10rem;
+    text-align: center;
+    background-color:transparent
+}
+

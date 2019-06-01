@@ -1,0 +1,25 @@
+.about-me {
+    color: #333;
+    h1{
+        margin-bottom: 50px;
+    }
+    .text-1{
+        font-size: 30px;
+        text-align: justify;
+
+        .fa:hover{
+            cursor: pointer;
+        }
+    }
+    .quotes{
+        color:#333;
+        margin-top: 3rem;
+        font-size: 30px;
+        text-align: end;
+        margin-bottom: 100px;
+        &:hover{
+            cursor: pointer;
+            color: red;
+        }
+    }
+}

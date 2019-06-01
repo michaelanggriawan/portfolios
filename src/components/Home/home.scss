@@ -1,0 +1,87 @@
+@import '../config.scss';
+
+
+.landing{
+    position: relative;
+    background: url('../../assets/img/Hero-1.jpg') no-repeat center center/cover;
+    background-position-y: -60px;
+    background-position-x: 40px;
+    height: 100vh;
+   
+
+    &-inner{
+        color: $background-color;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .a1{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .a2{
+            font-size: 36px;
+        }
+    }
+
+    .dark-overflay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        margin: 3rem 0;
+        a{
+            margin: 0 2rem;
+            color: $background-color;
+
+            &:hover{
+                color:$hover-color;
+            }
+        }
+    };
+}
+
+@media (max-width:768px){
+    .landing{
+        background-position-y: 50px;
+        background-position-x: -220px;
+    }
+    .dark-overflay{
+        .landing{
+             &-inner{
+                 margin-top:40px;
+                .a1{
+                    font-size:40px;
+                    margin-bottom: 40px;
+                }
+                .a2{
+                    font-size:25px;
+                }
+             }
+        }
+    }    
+}
+
+@media (max-width:380px){
+    .landing{
+        .social-media{
+           a{
+               margin: 0 1rem;
+           }
+        }
+    }
+}
